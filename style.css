@@ -1,0 +1,30 @@
+@font-face {
+	font-family: "Open Sans";
+	src: url("fonts/OpenSans-Regular.woff2") format("woff2"),
+	url("fonts/OpenSans-Regular.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Open Sans Bold";
+	src: url("fonts/OpenSans-Bold.woff2") format("woff2"),
+	url("fonts/OpenSans-Bold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Banny";
+	src: url("fonts/Banny-Round.woff2") format("woff2"),
+	url("fonts/Banny-Round.woff") format("woff");
+	font-style: normal;
+}
+
+body {
+	width: 1440px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+/*Хэдер*/
