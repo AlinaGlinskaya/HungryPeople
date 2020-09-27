@@ -31,6 +31,11 @@ body {
 	line-height: 24px;
 }
 
+.container {
+	width: 1280px;
+	margin: 0 auto;
+}
+
 .yellow-line {
 	width: 60px;
 	height: 5px;
@@ -69,6 +74,7 @@ body {
 	font-size: 12px;
 	line-height: 14px;
 	font-weight: 700;
+	color: #ffffff;
 	text-transform: uppercase;
 	letter-spacing: 5.9px;
 }
@@ -301,7 +307,7 @@ h1 span:nth-of-type(2) {
 
 .about {
 	min-height: 475px;
-	margin: 50px 80px;
+	margin: 50px 0;
 	display: flex;
 	background-color: #ffffff;
 }
@@ -342,7 +348,104 @@ h1 span:nth-of-type(2) {
 /*Team*/
 
 .team {
-	min-height: 675px;
-	background-color: #ffffff;
+	min-height: 673px;
+	background-color: #000000;
+	background-image: url("img/master-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.team__wrapper {
+	display: flex;
+	margin-top: 40px;
+}
+
+.team__main-title {
+	text-align: center;
+	padding-top: 44px;
+	margin-top: -5px;
+}
+
+.team__text {
+	color: #ffffff;
+}
+
+.team__image {
+	position: relative;
+	margin-left: 112px;
+	margin-right: 72px;
+}
+
+.team__image img {
+	border-radius: 5px;
+}
+
+.team__description {
+	position: relative;
+	padding-top: 80px;
+}
+
+.team__description-title {
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+
+.team__image-yellow-square {
+	bottom: 118px;
+	left: -113px;
+}
+
+.team__yellow-line {
+	margin: 0 auto;
+}
+
+.team__text.subtitle {
+	margin-top: 11px;
+	margin-bottom: 20px;
+}
+
+.team__text {
+	width: 600px;
+	text-align: center;
+}
+
+.team__image::before {
+	position: absolute;
+	content: "";
+	top: -99px;
+	left: 102px;
+	width: 1px;
+	height: 100px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.team__image::after {
+	position: absolute;
+	content: "";
+	bottom: -94px;
+	left: 102px;
+	width: 1px;
+	height: 100px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.team__description::before {
+	position: absolute;
+	content: "";
+	top: -97px;
+	left: -20px;
+	width: 1px;
+	height: 675px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.team__description::after {
+	position: absolute;
+	content: "";
+	top: -97px;
+	right: 194px;
+	width: 1px;
+	height: 675px;
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
