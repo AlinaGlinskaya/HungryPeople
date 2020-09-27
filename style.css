@@ -27,6 +27,50 @@ body {
 	box-sizing: border-box;
 	margin: 0 auto;
 	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.yellow-line {
+	width: 60px;
+	height: 5px;
+	background-color: #e8c300;
+	border-radius: 5px;
+}
+
+.yellow-square {
+	position: absolute;
+	box-sizing: border-box;
+	width: 250px;
+	height: 250px;
+	border: 20px solid #e8c300;
+	border-radius: 5px;
+	background-color: transparent;
+}
+
+.subtitle {
+	font-family: "Open Sans Bold", "Arial", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: center;
+}
+
+.title {
+	font-family: "Banny", "Arial", sans-serif;
+	font-size: 36px;
+	line-height: 48px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.small-title {
+	font-family: "Open Sans Bold";
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5.9px;
 }
 
 /*Хэдер*/
@@ -37,6 +81,7 @@ body {
 	background-image: url("img/header-bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-color: #000000;
 }
 
 .header__logo {
@@ -48,7 +93,7 @@ body {
 .header__wrapper {
 	display: flex;
 	justify-content: space-around;
-	margin-top: 200px;
+	margin-top: 197px;
 }
 
 .site-list {
@@ -91,7 +136,7 @@ body {
 
 .header__main {
 	width: 998px;
-	margin-top: 20px;
+	margin-top: 0;
 	text-align: center;
 }
 
@@ -100,7 +145,7 @@ body {
 	writing-mode: vertical-lr;
 	transform: rotate(180deg);
 	width: 222px;
-	height: 300px;
+	height: 305px;
 	text-align: center;
 	font-size: 12px;
 	line-height: 12px;
@@ -137,34 +182,17 @@ body {
 }
 
 h1 {
-	position: relative;
-	height: 150px;
-	font-family: "Open Sans Bold";
-	font-size: 12px;
-	line-height: 14px;
-	font-weight: 700;
+	height: 143px;
 	text-transform: uppercase;
-	letter-spacing: 5.9px;
 }
 
-h1::after {
-	position: absolute;
-	content: "";
-	bottom: -6px;
-	left: 470px;
-	width: 60px;
-	height: 5px;
-	background-color: #e8c300;
-	border-radius: 5px;
-}
-
-h1 span:first-of-type {
+.header__main-small-title {
 	padding-left: 8px;
 }
 
 h1 span:nth-of-type(2) {
 	display: block;
-	margin-top: 61px;
+	margin-top: 56px;
 	font-size: 96px;
 	font-family: "Banny";
 	font-weight: 300;
@@ -173,7 +201,7 @@ h1 span:nth-of-type(2) {
 
 .header__social-list {
 	padding-left: 80px;
-	padding-top: 22px;
+	padding-top: 28px;
 }
 
 .social-list__item {
@@ -205,7 +233,7 @@ h1 span:nth-of-type(2) {
 	display: flex;
 	width: 440px;
 	justify-content: space-between;
-	margin: 36px auto auto;
+	margin: 32px auto auto;
 }
 
 .header__main-button {
@@ -263,5 +291,58 @@ h1 span:nth-of-type(2) {
 	width: 1px;
 	height: 82px;
 	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header__main-yellow-line {
+	margin: 0 auto;
+}
+
+/*About us*/
+
+.about {
+	min-height: 475px;
+	margin: 50px 80px;
+	display: flex;
+	background-color: #ffffff;
+}
+
+.about__title {
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+
+.about__text {
+	text-align: center;
+	width: 600px;
+}
+
+.about__text.subtitle {
+	margin-top: 11px;
+	margin-bottom: 20px;
+}
+
+.about__description {
+	width: 632px;
+	padding-top: 135px;
+}
+
+.about__image {
+	position: relative;
+}
+
+.about__image-yellow-square {
+	top: 163px;
+	left: 398px;
+}
+
+.about__yellow-line {
+	margin-left: 298px;
+}
+
+/*Team*/
+
+.team {
+	min-height: 675px;
+	background-color: #ffffff;
 }
 
