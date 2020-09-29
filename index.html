@@ -113,7 +113,42 @@
 			</div>
 		</section>
 
-		</div>
+		<section class="booking">
+			<div class="container">
+
+				<div class="booking__form-wrapper">
+					<h2 class="booking__title title">Book a table</h2>
+					<div class="booking__yellow-line yellow-line"></div>
+					<form class="booking__form form" method="POST">
+						<input class="form__field" type="text" name="name" placeholder="Name">
+						<input class="form__field" type="email" name="email" placeholder="Email">
+						<input class="form__field" type="tel" name="phone" placeholder="Phone" title="+7 900 123-45-67" pattern="\+7\s?{0,1}9[0-9]{2}{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+						<div class="form__field-wrapper">
+							<select class="form__field form__field--select">
+								<option selected disabled>People</option>
+							</select>
+							<span class="form__field-arrow"></span>
+						</div>
+						<input class="form__field" type="text" name="date" placeholder="Date(mm/dd)" pattern="[0-1]{1}[0-9]{1}[/][0-9]{2}">
+						<div class="form__field-wrapper">
+							<select class="form__field form__field--select">
+								<option selected disabled>Time</option>
+							</select>
+							<span class="form__field-arrow"></span>
+						</div>
+						<input class="form__field form__field--submit" type="submit" value="Book now">
+
+					</form>
+				</div>
+
+				<div class="booking__image">
+					<img src="img/book.jpg" width="575" height="575" alt="Old watch">
+					<div class="booking__image-yellow-square yellow-square"></div>
+				</div>
+
+				<p class="booking__timing">Mon - Fri: <span>8PM - 10PM,</span> Sat - Sun: <span>8PM - 3AM,</span> Phone: <span>+40 729 131 637/+40 726 458 782</span></p>
+			</div>
+		</section>
 
 	</main>
 

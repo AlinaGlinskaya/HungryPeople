@@ -449,3 +449,123 @@ h1 span:nth-of-type(2) {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
+/*Booking*/
+
+.booking {
+	min-height: 575px;
+	background-color: #ffffff;
+}
+
+.booking .container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.booking__form-wrapper {
+	width: 565px;
+	padding-top: 82px;
+	margin-left: 55px;
+}
+
+.booking__title {
+	margin-bottom: 9px;
+}
+
+.booking__timing {
+	width: 100%;
+	margin-top: -11px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 12px;
+	color: #333333;
+	opacity: 0.5;
+}
+
+.booking__timing span {
+	font-family: "Open Sans Bold", "Arial", sans-serif;
+	font-weight: 700;
+	opacity: 1;
+}
+
+.booking__image {
+	position: relative;
+	margin-left: 22px;
+}
+
+.booking__image-yellow-square.yellow-square {
+	top: 176px;
+	left: 412px;
+	width: 226px;
+	height: 226px;
+}
+
+.booking__yellow-line {
+	margin: 0 auto;
+}
+
+.form {
+	margin: 20px auto auto;
+	width: 565px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.form__field {
+	box-sizing: border-box;
+	width: 277px;
+	height: 60px;
+	padding: 10px 20px;
+	background-color: #e5e5e5;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 10px;
+}
+
+.form__field::placeholder {
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 100%;
+	color: rgba(51, 51, 51, 0.5);
+}
+
+select {
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 100%;
+	color: rgba(51, 51, 51, 0.5);
+}
+
+select.form__field {
+	padding: 10px 15px;
+}
+
+.form__field--submit {
+	background-color: #e8c300;
+	width: 100%;
+	margin-top: 2px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.form__field-wrapper {
+	position: relative;
+}
+
+.form__field-arrow {
+	position: absolute;
+	top: 6px;
+	left: 221px;
+	display: inline-block;
+	background-color: #e5e5e5;
+	width: 56px;
+	height: 50px;
+	background-image: url("img/arrow-down-select.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	pointer-events: none;
+}
+
+
+
