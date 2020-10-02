@@ -22,6 +22,18 @@
 	font-weight: 300;
 }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+}
+
 body {
 	width: 1440px;
 	box-sizing: border-box;
@@ -76,7 +88,7 @@ body {
 	font-weight: 700;
 	color: #ffffff;
 	text-transform: uppercase;
-	letter-spacing: 5.9px;
+	letter-spacing: 0.5em;
 }
 
 /*Хэдер*/
@@ -247,9 +259,9 @@ h1 span:nth-of-type(2) {
 	display: block;
 	width: 200px;
 	height: 60px;
-	padding: 20px 0;
-	font-size: 12px;
-	line-height: 20px;
+	padding: 18px 0;
+	font-size: 11px;
+	line-height: 21px;
 	letter-spacing: 1px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -307,7 +319,7 @@ h1 span:nth-of-type(2) {
 
 .about {
 	min-height: 475px;
-	margin: 50px 0;
+	margin: 50px 0 45px;
 	display: flex;
 	background-color: #ffffff;
 }
@@ -355,15 +367,16 @@ h1 span:nth-of-type(2) {
 	background-size: cover;
 }
 
-.team__wrapper {
+.team .container {
 	display: flex;
-	margin-top: 40px;
+	flex-wrap: wrap;
 }
 
 .team__main-title {
+	width: 100%;
 	text-align: center;
-	padding-top: 44px;
-	margin-top: -5px;
+	padding-top: 32px;
+	margin-bottom: 42px;
 }
 
 .team__text {
@@ -374,6 +387,7 @@ h1 span:nth-of-type(2) {
 	position: relative;
 	margin-left: 112px;
 	margin-right: 72px;
+	z-index: 0
 }
 
 .team__image img {
@@ -415,18 +429,9 @@ h1 span:nth-of-type(2) {
 	top: -99px;
 	left: 102px;
 	width: 1px;
-	height: 100px;
+	height: 675px;
 	background-color: rgba(255, 255, 255, 0.2);
-}
-
-.team__image::after {
-	position: absolute;
-	content: "";
-	bottom: -94px;
-	left: 102px;
-	width: 1px;
-	height: 100px;
-	background-color: rgba(255, 255, 255, 0.2);
+	z-index: -1;
 }
 
 .team__description::before {
@@ -475,6 +480,7 @@ h1 span:nth-of-type(2) {
 .booking__timing {
 	width: 100%;
 	margin-top: -11px;
+	margin-bottom: 42px;
 	text-align: center;
 	font-size: 12px;
 	line-height: 12px;
@@ -514,6 +520,8 @@ h1 span:nth-of-type(2) {
 
 .form__field {
 	box-sizing: border-box;
+	font-size: 12px;
+	line-height: 20px;
 	width: 277px;
 	height: 60px;
 	padding: 10px 20px;
@@ -532,21 +540,22 @@ h1 span:nth-of-type(2) {
 
 select {
 	font-family: "Open Sans", "Arial", sans-serif;
-	font-size: 14px;
 	line-height: 100%;
 	color: rgba(51, 51, 51, 0.5);
 }
 
 select.form__field {
 	padding: 10px 15px;
+	font-size: 14px;
 }
 
 .form__field--submit {
 	background-color: #e8c300;
 	width: 100%;
-	margin-top: 2px;
 	color: #ffffff;
+	font-weight: 700;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .form__field-wrapper {
@@ -566,6 +575,122 @@ select.form__field {
 	background-position: center;
 	pointer-events: none;
 }
+
+/*Specialties*/
+
+.specialties {
+	min-height: 675px;
+	background-color: #000000;
+	background-image: url("img/specialties-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.specialties .container {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 34px;
+}
+
+.specialties__main-title {
+	width: 100%;
+	margin-bottom: 42px;
+	text-align: center;
+	padding-left: 10px;
+}
+
+.specialties__image {
+	position: relative;
+	margin-left: 125px;
+	margin-right: 80px;
+	z-index: 0;
+}
+
+.specialties__image img {
+	border-radius: 5px;
+}
+
+.specialties__image::before {
+	position: absolute;
+	content: "";
+	top: -100px;
+	left: 89px;
+	width: 1px;
+	height: 675px;
+	background-color: rgba(255, 255, 255, 0.2);
+	z-index: -1;
+}
+
+.specialties__yellow-square {
+	top: 107px;
+	left: -124px;
+	height: 261px;
+}
+
+.specialties__text {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.specialties__title {
+	margin-bottom: 10px;
+	color: #ffffff;
+	letter-spacing: 0.3px;
+}
+
+.specialties__description {
+	position: relative;
+	width: 600px;
+	padding-top: 80px;
+}
+
+.specialties__description::before {
+	position: absolute;
+	content: "";
+	top: -100px;
+	left: -39px;
+	width: 1px;
+	height: 675px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.specialties__description::after {
+	position: absolute;
+	content: "";
+	top: -100px;
+	left: 384px;
+	width: 1px;
+	height: 675px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.specialties__yellow-line.yellow-line {
+	margin: 0 auto;
+	width: 62px;
+}
+
+.specialties__slider-buttons {
+	margin-left: 606px;
+	margin-right: 570px;
+	margin-top: 31px;
+}
+
+.slider-button {
+	display: inline-block;
+	margin-right: 17px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.slider-button--active {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+/*Menu*/
 
 
 
