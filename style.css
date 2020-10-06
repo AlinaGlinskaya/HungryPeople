@@ -91,6 +91,20 @@ body {
 	letter-spacing: 0.5em;
 }
 
+.fas {
+	color: #e8c300;
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+.fa-phone, .fa-envelope {
+	margin-left: 10px;
+}
+
+.fa-phone {
+	margin-right: 13px;
+}
+
 /*Хэдер*/
 
 .header {
@@ -904,4 +918,110 @@ select.form__field {
 	flex-wrap: wrap;
 }
 
+/*Contact*/
 
+.contact {
+	min-height: 447px;
+	margin-top: 100px;
+	margin-bottom: 0;
+	background-color: #ffffff;
+}
+
+.contact__title {
+	margin-bottom: 8px;
+}
+
+.contact__yellow-line {
+	margin: 0 auto;
+}
+
+.contact__description {
+	width: 565px;
+	margin: 23px auto 0;
+}
+
+.contact__form {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 48px;
+}
+
+.contact__form textarea {
+	width: 100%;
+	min-height: 120px;
+	resize: none;
+}
+
+.contact__form textarea::placeholder {
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 14px;
+}
+
+.contact__form-field {
+	box-sizing: border-box;
+	width: 420px;
+	height: 60px;
+	padding: 19px 21px;
+	border-radius: 5px;
+	background-color: #e5e5e5;
+	border: none;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+input[type="text"], input[type="email"] {
+	margin-right: 10px;
+}
+
+.contact__form-field::placeholder {
+	color: #333333;
+	opacity: 0.5;
+}
+
+.contact__form-info {
+	font-family: "Open Sans Bold", "Arial", sans-serif;
+	font-size: 12px;
+	line-height: 36px;
+	font-weight: 700;
+	color: #333333;
+}
+
+.contact__form-info span {
+	opacity: 0.5;
+}
+
+.contact__form-field--submit {
+	width: 640px;
+	margin-left: 48px;
+	background-color: #e8c300;
+	font-family: "Open Sans Bold", "Arial", sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 20px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.contact__map {
+	width: 100%;
+	margin-top: 89px;
+}
+
+/*Footer*/
+
+.footer {
+	min-height: 100px;
+	box-sizing: border-box;
+	margin-top: -8px;
+	font-size: 12px;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	padding-top: 28px;
+}
+
+.footer__info span {
+	font-family: "Open Sans Bold", "Arial", sans-serif;
+	font-weight: 700;
+}
