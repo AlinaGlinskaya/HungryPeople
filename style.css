@@ -175,6 +175,7 @@ body {
 .header__timing {
 	position: relative;
 	writing-mode: vertical-lr;
+	-ms-writing-mode: tb-lr;
 	transform: rotate(180deg);
 	width: 222px;
 	height: 305px;
@@ -538,11 +539,12 @@ h1 span:nth-of-type(2) {
 	line-height: 20px;
 	width: 277px;
 	height: 60px;
-	padding: 10px 20px;
+	padding: 20px;
 	background-color: #e5e5e5;
 	border-radius: 5px;
 	border: none;
 	margin-bottom: 10px;
+	outline: none;
 }
 
 .form__field::placeholder {
@@ -578,12 +580,12 @@ select.form__field {
 
 .form__field-arrow {
 	position: absolute;
-	top: 6px;
+	top: 0;
 	left: 221px;
 	display: inline-block;
 	background-color: #e5e5e5;
 	width: 56px;
-	height: 50px;
+	height: 61px;
 	background-image: url("img/arrow-down-select.svg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -755,29 +757,26 @@ select.form__field {
 }
 
 .menu__list {
-	padding: 0;
 	margin: 54px 0 0;
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
+}
+
+.menu__list ul {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
 .menu__list-item {
-	width: 363px;
+	width: 372px;
 	height: 66px;
 	font-family: "Banny", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 16px;
 	font-weight: 700;
 	letter-spacing: 0.1px;
-}
-
-.menu__list-item:nth-child(3n + 1) {
-	margin-right: 88px;
-}
-
-.menu__list-item:nth-child(3n + 2) {
-	margin-right: 103px;
 }
 
 .menu__list-description {
@@ -882,6 +881,7 @@ select.form__field {
 	background-color: #000000;
 	color: #ffffff;
 	writing-mode: vertical-lr;
+	-ms-writing-mode: tb-lr;
 	font-family: "Banny", "Arial", sans-serif;
 	font-size: 24px;
 	line-height: 12px;
@@ -969,7 +969,7 @@ select.form__field {
 	font-size: 14px;
 }
 
-input[type="text"], input[type="email"] {
+.contact input[type="text"], .contact input[type="email"] {
 	margin-right: 10px;
 }
 
